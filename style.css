@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body
+{
+    background-color:#000000;
+    color:rgb(255, 187, 1);
+    
+}
+
+.border_btn01 {
+display: inline-block;
+width: 100%;
+max-width: 200px; /* ボタン幅 */
+color: rgb(255, 187, 1); /* 文字色 */
+border: 2px solid rgb(255, 187, 1); /* 線幅・種類・色 */
+background: rgb(0, 0, 0); /* 背景色 */
+padding: 1em 2em;
+font-weight: bold; /* 文字の太さ */
+text-decoration: none;
+text-align: center;
+transition: 0.3s;
+}
+
+/* マウスオーバーした際のデザイン */
+.border_btn01:hover {
+color: rgb(0, 0, 0); /* 文字色 */
+background: rgb(255, 187, 1); /* 背景色 */
+}
