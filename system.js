@@ -1,192 +1,181 @@
-function aisatu() 
+function identity() 
 {   
-    let word =[
-        "ぶるんぶるん",
-        "がたんことん",
-        "時計ヅラ",
-        "虫の旦那",
-        "く・へ・し・ぶ",
-        "洗濯",
-        "バスの掃除",
-        "正義の体現",
-        "どきどき",
-        "喧嘩",
-        "質問",
-        "ダンスタイム",
-        "祈祷",
-        "エンケファリン",
-        "リンバス・カンパニー",
-        "黄金の枝",
-        "パンパーン",
-        "右折",
-        "カチコチ",
-        "流行",
-        "イサン",
-        "赤色",
-        "グレゴール",
-        "ロージャ",
-        "イシュメール",
-        "ファウスト",
-        "ドンキホーテ",
-        "ウーティス",
-        "ホンル",
-        "ムルソー",
-        "ヒースクリフ",
-        "ダンテ",
-        "シンクレア",
-        "良秀",
-        "クリスマス",
-        "焼き鳥",
-        "髭",
-        "釘と金槌",
-        "廃棄物",
-        "囚人",
-        "消化",
-        "救恤",
-        "チキン",
-        "食材の下拵え",
-        "審判",
-        "浄化",
-        "貫かれ路地",
-        "世界",
-        "工房",
-        "オールイン",
-        "こっち",
-        "競技場",
-        "仲間",
-        "クリーマー",
-        "放出",
-        "関心",
-        "目",
-        "傘",
-        "香",
-        "妖精酒",
-        "投入",
-        "お札",
-        "蜘蛛",
-        "沢山の目",
-        "牛肉麺",
-        "サイチーム",
-        "潜伏任務",
-        "幼稚",
-        "無駄な抵抗",
-        "溶接",
-        "変身",
-        "安心",
-        "オッサン",
-        "観察",
-        "教育",
-        "ワープ列車",
-        "紅茶",
-        "事件",
-        "私たち",
-        "水",
-        "苦痛",
-        "森",
-        "循環",
-        "指揮チーム",
-        "鈎事務所",
-        "暴力"
-        ];
+    document.getElementById('isang').innerHTML = "";
+    document.getElementById('faust').innerHTML = "";
+    document.getElementById('donki').innerHTML = "";
+    document.getElementById('ryosyu').innerHTML = "";
+    document.getElementById('muruso').innerHTML = "";
+    document.getElementById('hongru').innerHTML = "";
 
-    aisatuShuffle(word);
+    document.getElementById('hearth').innerHTML = "";
+    document.getElementById('ishu').innerHTML = "";
+    document.getElementById('rojion').innerHTML = "";
+    document.getElementById('sincrea').innerHTML = "";
+    document.getElementById('uters').innerHTML = "";
+    document.getElementById('greg').innerHTML = "";
+    
+    //イサン
+    var isang =['LCB 囚人','南部セブン協会 6課','剣契 殺手',
+    '開花 E.G.O::壇香梅','奥歯事務所 フィクサー'];
+    //ファウスト
+    var faust =['LCB 囚人','W社 2級 整理要員',
+    '生き残った ロボトミー職員','握る者',
+    '南部ツヴァイ協会 4課','南部セブン協会 4課',
+    'ロボトミー E.G.O::後悔'];
+    //ドンキホーテ
+    var donki =['LCB 囚人','W社 3級 整理要員','南部シ協会 5課',
+    'N社 中槌','南部センク協会 5課 部長'];
+    //良秀
+    var ryosyu =['LCB 囚人','南部セブン協会 6課','黒雲会 若衆',
+    'りょ・ミ・パ 厨房長','W社 3級 整理要員'];
+    //ムルソー
+    var muruso =['LCB 囚人','南部リウ協会 6課','W社 2級 整理要員',
+    'N社 大槌','バラのスパナ工房 フィクサー',
+    'R社第4群 サイチーム'];
+    //ホンル
+    var hongru =['LCB 囚人','黒雲会 若衆',
+    'ぽんぽん派 ボス','南部リウ協会 5課',
+    'K社 3級 摘出職職員','W社 2級 整理要員','鈎事務所 フィクサー'];
+    //ヒースクリフ
+    var hearth =['LCB 囚人','南部シ協会 5課',
+    'R社第4群 ウサギチーム','N社 小槌',
+    'ロボトミー E.G.O::狐雨','南部セブン協会 4課'];
+    //イシュメール
+    var ishu =['LCB 囚人','R社第4群 トナカイチーム',
+    '南部シ協会 5課','LCCB 係長',
+    'ロボトミー E.G.O::たぷつき','南部リウ協会 4課',
+    '奥歯ボートセンター フィクサー'];
+    //ロージャ
+    var rojion =['LCB 囚人','黒雲会 若衆',
+    'LCCB 係長','N社 中槌',
+    'バラのスパナ工房 代表','南部ツヴァイ協会 5課',
+    '南部ディエーチ協会 4課'];
+    //シンクレア
+    var sincrea =['LCB 囚人','剣契 殺手',
+    '南部ツヴァイ協会 5課','マリアッチ ボス',
+    '握らんとする者','ロボトミー E.G.O::紅籍',
+    '奥歯ボートセンター フィクサー'];
+    //ウーティス
+    var uteirs =['LCB 囚人','剣契 組織員',
+    'G社 部長','南部セブン協会 6課 部長',
+    '奥歯事務所 フィクサー'];
+    //グレゴール
+    var greg =['LCB 囚人','南部リウ協会 6課',
+    'G社 課長代理','りょ・ミ・パ 助手',
+    'バラのスパナ工房 フィクサー','南部ツヴァイ協会 4課'];
+    
+    var sinners = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    sinnerShuffle(sinners);
 
-    var hureze=[
-        word[0]+"してもいい？",
-        "こんにちは、"+word[0]+"です。",
-        word[0]+"は4区へ行く。",
-        word[0]+"みたいな人になりたい。",
-        word[0]+"、着いたら誰か起こせよ。",
-        word[0]+"なら大丈夫じゃないですか？",
-        "ただ、いたずらなる"+word[0]+"ゆえ。",
-        "管理人さん、あんな"+word[0]+"みたいなのはフツーに無視した方が良いです。",
-        "私たちは一介の"+word[0]+"であって、正義のために前へ出るヒーローではないじゃないですか。",
-        "人生はいつも"+word[0]+"です。",
-        "いつも通り"+word[0]+"中だ。",
-        "皆の者！"+word[0]+"を見たまえ！",
-        word[0]+"だけを見ながら生きていくことにしたんだ！",
-        "覚悟ができてるなら、"+word[0]+"してみればいいんじゃないか。",
-        "こんな"+word[0]+"見たことありまするか？",
-        "憂鬱なときには"+word[0]+"するんだ。",
-        word[0]+"がいつも正しいわけではありません。",
-        "もう"+word[0]+"しかない。",
-        "気分良い"+word[0]+"、気分良く到着。",
-        "弱者へ"+word[0]+"を与えに参った！",
-        word[0]+"だけじゃ足りない...。",
-        "そんな風に見つめても無駄です、"+word[0]+"。",
-        "おれたちゃぁ、この世でいっちばん意味ない"+word[0]+"をしてんだぞ！",
-        "そうか...こんな"+word[0]+"もありやがるのか...。",
-        "どこから転がってきた"+word[0]+"だ？",
-        "あぁ、"+word[0]+"の時間です。",
-        "私もそなたのような凄い"+word[0]+"になるのが夢でありまする！",
-        "遅い。"+word[0]+"まで数えたのにお前たちが来なかった。",
-        "私は"+word[0]+"を忘れません。",
-        "ごめんな、あとで"+word[0]+"買ってあげるから。",
-        "どうして"+word[0]+"を見過ごすことができよう？",
-        word[0]+"を覚えているだろう。",
-        "なんでガン飛ばしてきてんだよ？"+word[0]+"してぇのか？",
-        "うっ..."+word[0]+"ですね、本当に。",
-        "私に会いに来て、"+word[0]+"！",
-        "でも君は私の"+word[0]+"だからね。",
-        "メフィの好きな"+word[0]+"。",
-        "おい！"+word[0]+"もっとねぇか？うめぇな。",
-        word[0]+"と呼んでください。",
-        "最善を尽くしてください、"+word[0]+"。",
-        word[0]+"を温めるためのスープをお求めですか？",
-        "やい、そこの！！！！！"+word[0]+"していきなされ！！！！！",
-        word[0]+"、揚げてやる。",
-        word[0]+"の言葉をいかに信じられよう！",
-        word[0]+"してもいいんですよね...?",
-        "はや、"+word[0]+"なりけり。",
-        "次の"+word[0]+"へと飛び越えていくには...。",
-        "...はい、お電話ありがとうございます。"+word[0]+"でございます。いつもお世話になっております。",
-        "さぁ..."+word[0]+"だよ～。ほら、かかってらっしゃい！",
-        "さぁ..."+word[0]+"です！",
-        "君が暴れ回れる最高の"+word[0]+"だ。",
-        "もう...オレに"+word[0]+"なんか、もういねぇからよ。",
-        word[0]+"入れてないんだな？ありがたいね...。",
-        word[0]+"の時間だ。",
-        "余計な"+word[0]+"は...要らない！",
-        word[0]+"の前が真っ暗になるぞ。",
-        word[0]+"が漏れぬやと思う。",
-        "私にはその"+word[0]+"がいと麗しく見ゆ。",
-        "うむ..."+word[0]+"一杯...。",
-        "あ～、やっと"+word[0]+"してくれるんですね～。",
-        word[0]+"を付けなきゃ...。",
-        word[0]+"たちが好みそうだ...。",
-        word[0]+"開いたんだ。",
-        "帰りに"+word[0]+"でも食べていきませんか？",
-        word[0]+"、突進します。",
-        "しっ、"+word[0]+"中だって。",
-        "どうだ、まだ"+word[0]+"と言うのか？",
-        "大人しくしてろよ..."+word[0]+"すんじゃねぇぞ！",
-        "よし...次は"+word[0]+"...。",
-        "さぁ～"+word[0]+"完了！",
-        "さぁ、全員口開けろ。"+word[0]+"して飲みやがれ、ふふっ。",
-        word[0]+"だなんて、言いすぎじゃぁないですかね...。",
-        "私は"+word[0]+"対象ではありませんが...。",
-        "呆れたよ。"+word[0]+"なんてしてろとは。",
-        "あれ"+word[0]+"って言うんでしたっけ、思ってたより狭かったんですよね？",
-        "ご注文は"+word[0]+"が承ります。",
-        word[0]+"を終わらせに行くとするかぁ？",
-        "結局、"+word[0]+"が出でて処理すべし。",
-        word[0]+"..."+word[0]+"を飲んどかないと...。",
-        word[0]+"なしに知識は得られないみたいな、なんちゃらかんちゃら...。",
-        word[0]+"に足を踏み入れるときには...気をつけるべきでしたね！",
-        word[0]+"の輪が一巡す。",
-        "今は..."+word[0]+"部署に異動しております。",
-        "ふむ...でも何だかこの"+word[0]+"、長続きしなさそうなんですよね。",
-        "この拘束具は、私の"+word[0]+"を阻止するには...到底及ばない。"
-    ];
+    
+    const form = document.forms.modeselect;
+    var select = form.mode.value;
+ 
+    // 人数の処理
+    if(select=="100")
+    {
+        var ninzuu = Math.floor( Math.random() * 7)+1;
+    }
+    else if(select=="1000")
+    {
+        var ninzuu = Math.floor( Math.random() * 12)+1;
+    }
+    else
+    {
+        var ninzuu = select;
+    }
 
-    aisatuShuffle(hureze);
-
-    document.getElementById('aisatu').innerHTML = "「"+hureze[0]+"」";
+    for(var i=0;i<ninzuu;i++)
+    {              
+        //イサン
+        if(sinners[i]==1)
+        {
+            var randamisang = Math.floor( Math.random() * isang.length ); 
+            var isangtext = isang[randamisang];   
+            document.getElementById('isang').innerHTML = isangtext;
+        }
+        //ファウスト
+        if(sinners[i]==2)
+        {                
+            var randamfaust = Math.floor( Math.random() * faust.length );    
+            var fausttext = faust[randamfaust];
+            document.getElementById('faust').innerHTML = fausttext;
+        }
+        //ドンキホーテ
+        if(sinners[i]==3)
+        {                
+            var randamdonki = Math.floor( Math.random() * donki.length );  
+            var donkitext = donki[randamdonki];  
+            document.getElementById('donki').innerHTML = donkitext;
+        }
+        //良秀
+        if(sinners[i]==4)
+        {                
+            var randamryosyu = Math.floor( Math.random() * ryosyu.length ); 
+            var ryosyutext = ryosyu[randamryosyu];  
+            document.getElementById('ryosyu').innerHTML = ryosyutext; 
+        }
+        //ムルソー
+        if(sinners[i]==5)
+        {                
+            var randammuruso = Math.floor( Math.random() * muruso.length ); 
+            var murusotext = muruso[randammuruso];   
+            document.getElementById('muruso').innerHTML = murusotext;
+        }
+        //ホンル
+        if(sinners[i]==6)
+        {                
+            var randamhongru = Math.floor( Math.random() * hongru.length ); 
+            var hongrutext = hongru[randamhongru]; 
+            document.getElementById('hongru').innerHTML = hongrutext;
+        }
+        //ヒースクリフ
+        if(sinners[i]==7)
+        {                
+            var randamhearth = Math.floor( Math.random() * hearth.length );
+            var hearthtext = hearth[randamhearth];
+            document.getElementById('hearth').innerHTML = hearthtext; 
+        }
+        //イシュメール
+        if(sinners[i]==8)
+        {                
+            var randamishu = Math.floor( Math.random() * ishu.length );   
+            var ishutext = ishu[randamishu];
+            document.getElementById('ishu').innerHTML = ishutext; 
+        }
+        //ロージャ
+        if(sinners[i]==9)
+        {                
+            var randamrojion = Math.floor( Math.random() * rojion.length );  
+            var rojiontext = rojion[randamrojion];
+            document.getElementById('rojion').innerHTML = rojiontext;
+        }
+        //シンクレア
+        if(sinners[i]==10)
+        {                
+            var randamsincrea = Math.floor( Math.random() * sincrea.length );    
+            var sincreatext = sincrea[randamsincrea];
+            document.getElementById('sincrea').innerHTML = sincreatext;
+        }
+        //ウーティス
+        if(sinners[i]==11)
+        {                
+            var randamuteirs = Math.floor( Math.random() * uteirs.length );   
+            var uteirstext = uteirs[randamuteirs]; 
+            document.getElementById('uters').innerHTML = uteirstext;
+        }
+        //グレゴール
+        if(sinners[i]==12)
+        {                
+            var randamgreg = Math.floor( Math.random() * greg.length ); 
+            var gregtext = greg[randamgreg]; 
+            document.getElementById('greg').innerHTML = gregtext;
+        }
+    }
     
 }
 
-
-function aisatuShuffle(array) 
+function sinnerShuffle(array) 
 {
     for(let i = (array.length - 1); 0 < i; i--)
     {  
