@@ -170,7 +170,6 @@ function aisatu()
         "血液バー",
         "パレード",
         "凶弾"
-        
         ];
 
     aisatuShuffle(word);
@@ -285,7 +284,7 @@ function aisatu()
         "全ては"+word[0]+"のせいだな！",
         "さぁ、祈ってしんぜよう！この"+word[0]+"がどうかそなたに当たらんことを！",
         word[0]+"は、禁忌だ。",
-        woed[0]+"を咲かせてみせましょうか。",
+        word[0]+"を咲かせてみせましょうか。",
         "少し見回りながら、"+word[0]+"でもして良いか？",
         word[0]+"でも早く注いでくれって...。",
         "無駄に"+word[0]+"するのはやめて、受け入れて。",
@@ -348,7 +347,7 @@ function aisatu()
     aisatuShuffle(hureze);
 
     document.getElementById('aisatu').innerHTML = "「"+hureze[0]+"」";
-    
+
 }
 
 function aisatuShuffle(array) 
