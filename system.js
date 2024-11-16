@@ -169,7 +169,7 @@ function aisatu()
         "呪い",
         "血液バー",
         "パレード",
-        "凶弾"
+        "凶弾",
         
         ];
 
@@ -342,7 +342,7 @@ function aisatu()
         "誰かに"+word[0]+"を受ける気分はどういうものか...。",
         word[0]+"が偉大だと信じて疑わないときもあったさ。",
         "果てなき"+word[0]+"を、共にしてくださいますか？",
-        "凶悪なる"+word[0]+"が彼らを貫通せん...!"
+        "凶悪なる"+word[0]+"が彼らを貫通せん...!",
     ];
 
     aisatuShuffle(hureze);
@@ -351,7 +351,6 @@ function aisatu()
     
 }
 
-//配列入れ替えゾーン
 function aisatuShuffle(array) 
 {
     for(let i = (array.length - 1); 0 < i; i--)
